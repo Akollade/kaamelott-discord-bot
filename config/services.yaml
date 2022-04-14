@@ -22,3 +22,11 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    Discord\Discord:
+        $options:
+            token: '%env(DISCORD_BOT_TOKEN)%'
+            logger: '@logger'
+
+    App\Soundboard:
+        $soundsPath: '%kernel.project_dir%/assets/soundboard/sounds'

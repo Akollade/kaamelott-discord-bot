@@ -1,0 +1,3 @@
+[submodule "assets/soundboard"]
+	path = assets/soundboard
+	url = https://github.com/2ec0b4/kaamelott-soundboard.git
